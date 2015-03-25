@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEB0CC4F-ACDD-4431-B538-BDA5BD5C90EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Codentia.Common.Net.Test</RootNamespace>
+    <AssemblyName>Codentia.Common.Net.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Debug\MattchedIT.Common.Net.Test.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Codentia.Common.Data">
+      <HintPath>..\..\packages\Codentia.Common.Data.dll.3.0.0-dev\lib\Codentia.Common.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Codentia.Common.Helper">
+      <HintPath>..\..\packages\Codentia.Common.Helper.dll.2.0.0-dev\lib\Codentia.Common.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Codentia.Common.Logging">
+      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0-dev\lib\Codentia.Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Codentia.Common.Types">
+      <HintPath>..\..\packages\Codentia.Common.Helper.dll.2.0.0-dev\lib\Codentia.Common.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Codentia.Test">
+      <HintPath>..\..\packages\Codentia.Test.dll.2.0.0-dev\lib\Codentia.Test.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\Codentia.Test.dll.2.0.0-dev\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BotPlug\BotPlugTest.cs" />
+    <Compile Include="CDNManagerTest.cs" />
+    <Compile Include="EmailManagerTest.cs" />
+    <Compile Include="FTP\FTPClientTest.cs" />
+    <Compile Include="FTP\FTPExceptionTest.cs" />
+    <Compile Include="FTP\FTPResponseTest.cs" />
+    <Compile Include="IISManagerTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebUtilityTest.cs" />
+    <Compile Include="Web\BasicSOAPRequestTest.cs" />
+    <Compile Include="Web\BasicUrlRequestTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestData\EmailTemplates\Template1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Codentia.Common.Net.Test.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\app\Codentia.Common.Net.csproj">
+      <Project>{20f7bd7e-6829-4e41-85f1-37250af6bab4}</Project>
+      <Name>Codentia.Common.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.Targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<emailtemplate>
+	<plaintext>
+		   ~~TAG~~
+	</plaintext>
+	<html>
+		<b>~~TAG~~</b>
+	</html>
+</emailtemplate>
