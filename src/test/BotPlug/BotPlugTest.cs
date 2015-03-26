@@ -54,7 +54,7 @@ namespace Codentia.Common.Net.Test.BotPlug
 
                 if (i < 10 || i > 19)
                 {
-                    Assert.That(currentDuration, Is.LessThan(1400)); //// TODO: was 400 changed to 1400 to fudge tests
+                    Assert.That(currentDuration, Is.LessThan(400));
                 }
                 else
                 {
