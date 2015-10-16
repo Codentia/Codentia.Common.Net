@@ -38,16 +38,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Codentia.Common.Data">
-      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0-dev\lib\Codentia.Common.Data.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Data.dll.4.0.0-dev-20151015210336\lib\Codentia.Common.Data.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Common.Helper">
-      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0-dev\lib\Codentia.Common.Helper.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Helper.dll.2.0.0-dev-20151015190952\lib\Codentia.Common.Helper.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Common.Logging">
-      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0-dev\lib\Codentia.Common.Logging.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0-dev-20151016124652\lib\Codentia.Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Codentia.Common.Types">
-      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0-dev\lib\Codentia.Common.Types.dll</HintPath>
+    <Reference Include="Codentia.Common.Types, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Codentia.Common.Types.dll.2.0.0-dev-20151015203406\lib\Codentia.Common.Types.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
