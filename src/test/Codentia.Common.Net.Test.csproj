@@ -23,7 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\MattchedIT.Common.Net.Test.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Codentia.Common.Net.Test.XML</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
   </PropertyGroup>
@@ -46,13 +46,13 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Codentia.Common.Logging">
-      <HintPath>..\..\packages\Codentia.Common.Logging.dll.2.2.0.116\lib\Codentia.Common.Logging.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Logging.dll.2.2.0.120\lib\Codentia.Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Common.Types">
       <HintPath>..\..\packages\Codentia.Common.Types.dll.1.1.2.22\lib\Codentia.Common.Types.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Test">
-      <HintPath>..\..\packages\Codentia.Test.dll.1.2.0.78\lib\Codentia.Test.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Test.dll.1.2.0.79\lib\Codentia.Test.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>True</SpecificVersion>
